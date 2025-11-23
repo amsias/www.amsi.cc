@@ -1,0 +1,94 @@
+/* Fonts */
+@font-face {
+    font-family: 'FCaslon-Italic';
+    src: url('../fonts/FCaslonTwelveITC-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FCaslon-Roman';
+    src: url('../fonts/FCaslonTwelveITC-Roman.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FCaslon-SC';
+    src: url('../fonts/FCaslonTwelveSCITCTTRoman.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'FCaslon-Roman', serif;
+    background-color: #fdfdfd;
+    /* Off-white for elegance */
+    color: #1a1a1a;
+    /* Soft black */
+    line-height: 1.6;
+    font-size: 18px;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Layout Utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Typography & Interactive Text */
+h1,
+h2,
+h3,
+p,
+li,
+a {
+    transition: font-family 0.1s ease;
+    /* Quick transition for the effect */
+}
+
+.hover-text {
+    display: block;
+    /* Ensure it behaves as a line/block for hover */
+    width: fit-content;
+    /* Only trigger on the text itself */
+    margin: 0.5rem 0;
+}
+
+/* Navigation Links */
+.nav-link {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
