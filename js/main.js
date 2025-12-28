@@ -1,24 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Font replacement logic
     const fonts = ['FCaslon-Italic', 'FCaslon-Roman', 'FCaslon-SC'];
-    const interactiveElements = document.querySelectorAll('.hover-text, h1, h2, h3, p, a, li');
+    const interactiveElements = document.querySelectorAll('.hover-text, h1, h2, h3, p, a, li, button, span');
 
     interactiveElements.forEach(el => {
         el.addEventListener('mouseenter', () => {
-            // Get current font to avoid picking it again
-            const currentFont = el.style.fontFamily.replace(/['"]/g, ''); // Clean up quotes if present
-
-            // Filter out the current font from the available options
+            const currentFont = el.style.fontFamily.replace(/['"]/g, '');
             const availableFonts = fonts.filter(f => f !== currentFont);
-
-            // Pick a random font from the remaining options
             const randomFont = availableFonts[Math.floor(Math.random() * availableFonts.length)];
-
             el.style.fontFamily = randomFont;
         });
+    });
 
-        // Optional: Reset on mouseleave? 
-        // User said: "randomly change to one of the fonts every time the pointer hovers"
-        // It implies the change happens ON hover. It doesn't explicitly say it should revert.
-        // Keeping the changed font adds to the chaotic/artistic feel.
+    // Accordion Logic
+    const accordions = document.querySelectorAll('.accordion-header');
+
+    accordions.forEach(acc => {
+        acc.addEventListener('click', function () {
+            // Toggle active class
+            this.classList.toggle('active');
+
+            // Icon rotation/change (optional, simple +/- text toggle for now)
+            const icon = this.querySelector('span:last-child');
+            if (icon) {
+                icon.textContent = this.classList.contains('active') ? '-' : '+';
+            }
+
+            // Panel visibility
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                panel.classList.remove('active');
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.classList.add('active');
+            }
+        });
     });
 });
