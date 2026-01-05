@@ -10,154 +10,191 @@
 
 <body>
     <div class="container">
-        <nav class="browser-menu">
-            <div class="browser-bar">
-                <a href="#intro" class="browser-link hover-text">intro</a>
-                <a href="#resume" class="browser-link hover-text">resume</a>
-                <a href="#projects" class="browser-link hover-text">projects</a>
-                <a href="#certifications" class="browser-link hover-text">certs</a>
-                <a href="#skills" class="browser-link hover-text">skills</a>
-                <a href="../index.html" class="browser-link hover-text" style="color: #999;">&larr; hub</a>
-            </div>
+
+        <!-- Minimal Nav -->
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li><a href="#intro" class="hover-text">Intro</a></li>
+                <li><a href="#resume" class="hover-text">Resume</a></li>
+                <li><a href="#projects" class="hover-text">Projects</a></li>
+                <li><a href="#certifications" class="hover-text">Certs</a></li>
+                <li><a href="#skills" class="hover-text">Skills</a></li>
+                <li><a href="../index.html" class="hover-text back-link">&larr; Hub</a></li>
+            </ul>
         </nav>
 
-        <section id="intro" class="intro-grid">
-            <div class="photo-placeholder">
-                <p>photo</p>
-            </div>
+        <section id="intro" class="intro-section">
             <div class="intro-content">
-                <h1 class="hover-text" style="font-size: 2.2rem; margin:0;">Amsi Derek Sánchez Martínez</h1>
-                <p class="role-text hover-text">
-                    Industrial Engineer 4.0 focused on Digital Process Automation & Operations Optimization
+                <h1 class="main-title hover-text">Amsi Derek Sánchez Martínez</h1>
+                <p class="role-text">
+                    Industrial Engineer 4.0 &mdash; Digital Process Automation & Operations Optimization
                 </p>
-                <div class="socials">
-                    <a href="mailto:amsidsanchez@gmail.com" class="social-link hover-text">amsidsanchez@gmail.com</a>
-                    <a href="https://github.com/amsias" target="_blank" class="social-link hover-text">github</a>
-                    <a href="https://linkedin.com/in/amsi" target="_blank" class="social-link hover-text">linkedin</a>
-                    <a href="../cv_amsi_sanchez_website.pdf" target="_blank" class="download-link hover-text"
-                        style="font-size: 1.1rem;">View Full CV (PDF) &nearr;</a>
+                <div class="contact-links">
+                    <a href="mailto:amsidsanchez@gmail.com" class="hover-text">amsidsanchez@gmail.com</a>
+                    <span class="separator">/</span>
+                    <a href="https://github.com/amsias" target="_blank" class="hover-text">GitHub</a>
+                    <span class="separator">/</span>
+                    <a href="https://linkedin.com/in/amsisanchez" target="_blank" class="hover-text">LinkedIn</a>
                 </div>
             </div>
         </section>
 
-        <section id="resume" class="resume-container">
-            <h2 class="hover-text" style="font-size: 2rem; margin-bottom: 2rem;">Resume</h2>
+        <hr class="section-divider">
 
-            <div class="resume-text-content">
-                <div class="resume-item">
-                    <p class="hover-text">Industrial Engineer focused on process automation and optimization, with
-                        experience in cloud-based digital solutions through software development and deployment. Skilled
-                        in applying Lean Six Sigma and Agile methodologies to transform operations using data
-                        analysis—identifying inefficiencies, designing technical solutions, and measuring quantifiable
-                        impact. Committed to continuous improvement, operational efficiency, and multidisciplinary
-                        learning.</p>
-                </div>
+        <section id="resume" class="section-block">
+            <header class="section-header">
+                <h2 class="hover-text">Resume</h2>
+                <a href="../cv_amsi_sanchez_website.pdf" target="_blank" class="action-link hover-text">PDF Download
+                    &nearr;</a>
+            </header>
+
+            <div class="resume-summary">
+                <p>
+                    Industrial Engineer focused on process automation and optimization, with experience in cloud-based
+                    digital solutions through software development and deployment. Skilled in applying Lean Six Sigma
+                    and Agile methodologies to transform operations using data analysis. Confident in identifying
+                    inefficiencies, designing technical solutions, and measuring quantifiable impact.
+                </p>
             </div>
 
-            <div style="margin-top: 1rem;">
-                <a href="../cv_amsi_sanchez_website.pdf" target="_blank" class="download-link hover-text"
-                    style="font-size: 1.1rem;">View Full CV (PDF) &nearr;</a>
-            </div>
         </section>
 
-        <section id="projects" style="margin-bottom: 5rem;">
-            <h2 class="hover-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Projects</h2>
-            <div class="accordion">
-                <!-- Project 1 -->
-                <div class="accordion-item">
-                    <button class="accordion-header hover-text">
-                        <span>Acquisition System</span>
-                        <span>+</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="project-details">
-                            <p>Online Demo: <a href="https://vflow.amsi.cc" target="_blank">vflow.amsi.cc</a>
+        <hr class="section-divider">
+
+        <section id="projects" class="section-block">
+            <h2 class="hover-text section-title">Projects</h2>
+
+            <div class="project-list">
+                <article class="project-item">
+                    <div class="project-header">
+                        <h3 class="hover-text">Digital Transformation & Cloud App</h3>
+                        <a href="https://vflow.amsi.cc" target="_blank" class="project-link hover-text">vflow.amsi.cc
+                            &nearr;</a>
+                    </div>
+
+                    <div class="project-grid">
+                        <div class="project-meta full-width">
+                            <span class="meta-label">Role:</span> Digital Transformation Project Lead @ Grupo Vemen
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="block-title">The Challenge</h4>
+                            <p>
+                                The procurement department managed sourcing for four companies using non-standardized
+                                printed manual Excel processes, resulting in constant rework and zero traceability.
                             </p>
-                            <p>This project</p>
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="block-title">The Solution</h4>
+                            <p>
+                                Led the development of <strong>VFlow</strong>, a cloud-native application (FastAPI +
+                                React
+                                on GCP) that centralized operations, automated validations, and eliminated paper
+                                workflows.
+                            </p>
+                        </div>
+
+                        <div class="project-block full-width">
+                            <h4 class="block-title">Key Impact</h4>
+                            <ul class="impact-list">
+                                <li><strong>Zero-Error:</strong> Automated validations reduced rework from 33% to ~0%.
+                                </li>
+                                <li><strong>Efficiency:</strong> Digitalization radically improved user experience
+                                    (frustration score 9/10 &rightarrow; 1/10).</li>
+                                <li><strong>Profitability:</strong> Immediate ROI through labor savings and scalability.
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-header">
+                        <h3 class="hover-text">Logistics Optimization & Middleware</h3>
+                        <a href="https://revistaveritas.org/index.php/veritas/article/view/1008" target="_blank"
+                            class="project-link hover-text">Article
+                            &nearr;</a>
+                    </div>
+
+                    <div class="project-grid">
+                        <div class="project-meta full-width">
+                            <span class="meta-label">Role:</span> Supply Chain Engineer @ CEDIS UAEH
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="block-title">The Challenge</h4>
+                            <p>
+                                The distribution system suffered from severe bottlenecks documentation, impacting cycle
+                                time and creating high cognitive load. The solution required implementation without
+                                disrupting daily operations.
+                            </p>
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="block-title">The Solution</h4>
+                            <p>
+                                Developed a custom <strong>Python middleware</strong> and applied Lean Six Sigma (DMAIC)
+                                to redesign critical workflows, ensuring accurate inventory tracking through digital
+                                Poka-Yokes.
+                            </p>
+                        </div>
+
+                        <div class="project-block full-width">
+                            <h4 class="block-title">Key Impact</h4>
+                            <ul class="impact-list">
+                                <li><strong>Speed:</strong> 71.5% reduction in cycle time (+600 hours saved/year).</li>
+                                <li><strong>Quality:</strong> 92.3% reduction in process defects.</li>
+                                <li><strong>Human Factor:</strong> Mental workload cut by 50% (NASA-TLX), boosting
+                                    productivity by 48%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="certifications" class="section-block">
+            <h2 class="hover-text section-title">Certifications</h2>
+            <ul class="simple-list">
+                <li class="list-item">
+                    <span class="item-title hover-text">Associate Cloud Engineer</span>
+                    <span class="item-meta hover-text">Google, 2026</span>
+                </li>
+                <li class="list-item">
+                    <span class="item-title hover-text">Six Sigma Yellow Belt</span>
+                    <span class="item-meta hover-text">UAEH, 2025</span>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="skills" class="section-block">
+            <h2 class="hover-text section-title">Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title hover-text">Technical</h3>
+                    <p>IaaS/Cloud (GCP), Docker, Git, SQL, NoSQL, Python (FastAPI, Pandas), React.js,
+                        Excel, SolidWorks, AutoCAD, Adobe Suite.</p>
                 </div>
-                <!-- Project 2 -->
-                <div class="accordion-item">
-                    <button class="accordion-header hover-text">
-                        <span>Project Two: Data Optimization</span>
-                        <span>+</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="project-details">
-                            <p>Description of the data optimization project. Highlights of efficiency gains and
-                                technologies implemented.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="accordion-item">
-                    <button class="accordion-header hover-text">
-                        <span>Project Three: Process Digitalization</span>
-                        <span>+</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="project-details">
-                            <p>Details about the process digitalization initiative. Steps taken to modernize the
-                                workflow.</p>
-                        </div>
-                    </div>
+                <div class="skill-category">
+                    <h3 class="category-title hover-text">Soft Skills</h3>
+                    <p>Critical Thinking, Problem Solving, Creativity, Proactivity, Autodidact
+                        Ability, Empathy, Collaboration, Time Management.</p>
                 </div>
             </div>
         </section>
 
-        <section id="certifications" style="margin-bottom: 5rem;">
-            <h2 class="hover-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Certifications</h2>
-            <div class="grid-cols-2">
-                <div class="card">
-                    <h3 class="hover-text" style="font-size: 1.3rem; margin-bottom: 0.5rem;">Associate Cloud Engineer
-                    </h3>
-                    <p class="hover-text">Google 2026</p>
-                </div>
-                <div class="card">
-                    <h3 class="hover-text" style="font-size: 1.3rem; margin-bottom: 0.5rem;">Six Sigma Yellow Belt</h3>
-                    <p class="hover-text">UAEH 2025</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" style="margin-bottom: 5rem;">
-            <h2 class="hover-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Skills</h2>
-            <div class="grid-cols-2">
-                <div class="card">
-                    <h3 class="hover-text" style="font-size: 1.3rem; margin-bottom: 1rem;">Technical</h3>
-                    <ul style="list-style: none; padding:0;">
-                        <li class="hover-text">IaaS/Cloud (GCP)</li>
-                        <li class="hover-text">Docker & Git</li>
-                        <li class="hover-text">DataBases (SQL, NoSQL)</li>
-                        <li class="hover-text">Python (FastAPI, Pandas, NumPy, SciKit)</li>
-                        <li class="hover-text">React.js</li>
-                        <li class="hover-text">Excel</li>
-                        <li class="hover-text">SolidWorks & AutoCAD</li>
-                        <li class="hover-text">Adobe Suite (Ps, Ai, Pr)</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="hover-text" style="font-size: 1.3rem; margin-bottom: 1rem;">Soft Skills</h3>
-                    <ul style="list-style: none; padding:0;">
-                        <li class="hover-text">Critical Thinking</li>
-                        <li class="hover-text">Problem Solving</li>
-                        <li class="hover-text">Creativity</li>
-                        <li class="hover-text">Proactivity and autonomy</li>
-                        <li class="hover-text">Autodidact Ability</li>
-                        <li class="hover-text">Empathy and sensitivity</li>
-                        <li class="hover-text">Collaboration</li>
-                        <li class="hover-text">Time management</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <footer style="margin-top: 4rem; text-align: center; font-size: 0.8rem; padding-bottom: 2rem; color: #666;">
-            <p class="hover-text">&copy; 2025 Amsi Derek Sánchez Martínez</p>
+        <footer class="main-footer">
+            <p>&copy; 2025 Amsi Derek Sánchez Martínez</p>
         </footer>
-    </div>
 
+    </div>
     <script src="../js/main.js"></script>
 </body>
 

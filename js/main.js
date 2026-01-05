@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Font replacement logic
     const fonts = ['FCaslon-Italic', 'FCaslon-Roman', 'FCaslon-SC'];
-    const interactiveElements = document.querySelectorAll('.hover-text, h1, h2, h3, p, a, li, button, span');
+    const interactiveElements = document.querySelectorAll('.hover-text, h1, h2, h3, a, li, button, span');
 
     interactiveElements.forEach(el => {
         el.addEventListener('mouseenter', () => {
