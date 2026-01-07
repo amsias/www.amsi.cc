@@ -142,6 +142,17 @@ h2 {
     margin-bottom: 3rem;
 }
 
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.intro-text {
+    flex: 1;
+}
+
 .main-title {
     font-size: 3.5rem;
     line-height: 1.1;
@@ -154,7 +165,7 @@ h2 {
     font-size: 1.4rem;
     color: #444;
     margin-bottom: 2rem;
-    max-width: 80%;
+    max-width: 90%;
     line-height: 1.4;
 }
 
@@ -167,6 +178,16 @@ h2 {
     color: #ccc;
     margin: 0 0.5rem;
 }
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #eee;
+    flex-shrink: 0;
+}
+
 
 /* Resume */
 .resume-summary {
@@ -300,6 +321,28 @@ h2 {
         margin-left: 0;
         width: 100%;
         margin-top: 0.5rem;
+    }
+
+    .intro-content {
+        flex-direction: column-reverse;
+        /* Put image on top or bottom? usually top on mobile, but let's see. If reverse, image is on top. original order: text, img. column-reverse: img, text. */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .intro-text {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .role-text {
+        max-width: 100%;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
     }
 }
 
